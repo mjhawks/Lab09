@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title> Webstore </title>
+    <script type="text/javascript" src="formChecker.js"></script>
+    <link href="style.css"
+    rel="stylesheet"
+    type="text/css"/>
+  </head>
+  <body>
+    <form action="customerBackend.php" onsubmit="return checkPassword()" method="post">
+    <b>email and password</b><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password"><br>
+    <b id = "pworderror"></b>
+
+    <br>
+
+
+
+    <img src="https://www.lg.com/us/images/tvs/32ln5700/gallery/large07.jpg" width="200" height="200">
+    <button onclick="addTv()" type="button">Add 1 to order</button>
+    <b id = "tvtotal"></b></b>
+    <input type="hidden" name="tvdata" id="tvdata" value="0" >
+    <br>
+    <b>Television $57.00</b><br><br>
+
+    <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/ADS6_131848640818776250ufkVTtU4aE.jpg" width="200" height="200">
+    <button onclick="addCell()" type="button">Add 1 to order</button>
+    <b id = "celltotal"></b>
+    <input type="hidden" name="celldata" id="celldata" value="0" >
+    <br>
+    <b>Phone $200.00</b><br><br>
+
+
+    <img src="https://www.simplyrecipes.com/thmb/CpT2MvkJDDfpR9DsLjv6AdfS1Uc=/2000x1125/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__03__stovetop-asparagus-horiz-a-2000-4941e1a824ed4a4798f66fb54f8e04e6.jpg" width="200" height="200">
+    <button onclick="addAsper()" type="button">Add 1 to order</button>
+    <b id = "aspertotal"></b>
+    <input type="hidden" name="asperdata" id="asperdata" value="0" >
+    <br>
+    <b>asparagus $14.00</b><br>
+
+
+    <br><b id = "total"></b><br><br>
+
+     Shipping options <br>
+    <input type="radio" id="Free 7 day" name="shipping" value="Free 7 day">
+    <label for="Free 7 day">Free 7 day</label><br>
+    <input type="radio" id="Overnight" name="shipping" value="Overnight">
+    <label for="Overnight">$50.00 Overnight</label><br>
+    <input type="radio" id="three day" name="shipping" value="three day">
+    <label for="three day">$5.00 three day</label><br>
+    <b id = "shippingerror"></b>
+    <br>
+
+
+    <button onclick="window.location.reload();" type="button">reset</button>
+    <b id = "reset"></b><br>
+    <input type="submit">
+    <input type="hidden" name="totalprice" id="totalprice" value="0" >
+    </form>
+  </body>
+</html>
